@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Ventana_inicio</class>
+ <widget class="QWidget" name="Ventana_inicio">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>396</width>
+    <height>291</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>396</width>
+    <height>291</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>396</width>
+    <height>291</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(144, 144, 144);</string>
+  </property>
+  <widget class="QLabel" name="dcc_cafe">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>40</y>
+     <width>261</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>sprites/otros/logo_negro.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_bienvenida">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>150</y>
+     <width>311</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(1, 102, 70);</string>
+   </property>
+   <property name="text">
+    <string>¡Bienvenido al mejor café virtual del DCC!</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="seguir_jugando_button">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>230</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(48, 177, 52);</string>
+   </property>
+   <property name="text">
+    <string>Seguir jugando</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="comenzar_de_nuevo_button">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>230</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(206, 22, 5);</string>
+   </property>
+   <property name="text">
+    <string>Comenzar de nuevo</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>seguir_jugando_button</sender>
+   <signal>clicked()</signal>
+   <receiver>Ventana_inicio</receiver>
+   <slot>continuar_partida()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>125</x>
+     <y>245</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>197</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comenzar_de_nuevo_button</sender>
+   <signal>clicked()</signal>
+   <receiver>Ventana_inicio</receiver>
+   <slot>empezar_nueva_partida()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>265</x>
+     <y>245</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>197</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>continuar_partida()</slot>
+  <slot>empezar_nueva_partida()</slot>
+  <slot>Posicion_mouse()</slot>
+  <slot>slot1()</slot>
+ </slots>
+</ui>
